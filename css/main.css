@@ -75,6 +75,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 html {
 	max-width: 1200px;
 	background-color: grey;
