@@ -173,7 +173,7 @@ nav a:focus, nav a:hover {
 	color: #DDD;
 }
 .hero-area {
-	background-image: url("../img/jake-melara-30679-unsplash.jpg");
+	background-image: url("../img/jake-melara-30679-unsplash.png");
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -201,7 +201,7 @@ nav a:focus, nav a:hover {
 	margin-top: 1em;
 }
 .amenities-area {
-	background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+	background-image: url("../img/rawpixel-800820-unsplash1.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -236,7 +236,7 @@ figcaption {
 }
 .review-img {
 	padding: 7.5em;
-	background-image: url("../img/omar-lopez-296944-unsplash.jpg");
+	background-image: url("../img/omar-lopez-296944-unsplash.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
