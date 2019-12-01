@@ -104,8 +104,8 @@ h4 {
 p {
 	font-size: 0.875em;
 }
-.web-wrapper {}
 .cointainer {
+	max-width: 640px;
 	width: 95%;
 	margin: 0 auto;
 }
@@ -115,6 +115,11 @@ img {
 }
 figure {
 	margin: 0;
+}
+figcaption {
+	padding-top: 1em;
+	text-align: center;
+	width: 60%;
 }
 header {
 	background-color: #202322;
@@ -189,7 +194,7 @@ nav a:focus, nav a:hover {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	padding-bottom: 3.3em;
+	padding-bottom: 1.8em;
 }
 .news-area h4 {
 	margin: 1.2em 0 0 0;
@@ -222,51 +227,101 @@ nav a:focus, nav a:hover {
 	flex-flow: column wrap;
 	padding-bottom: 2em;
 }
-figcaption {
-	padding-top: 1em;
-	text-align: center;
-	width: 60%;
-	flex-flow: row wrap;
+.review-area .cointainer {
 	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
 }
 .review-area {
 	padding-top: 1em;
 	padding-bottom: 1.6em;
 	background-color: #2a423a;
 }
+.review-area p {
+	max-width: 600px;
+}
 .review-img {
+	width: 100%;
+	max-width: 600px;
 	padding: 7.5em;
 	background-image: url("../img/omar-lopez-296944-unsplash.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.contact {
+footer {
+	display: flex;
+	flex-direction: column;
+}
+footer p {
+	margin: 0;
+}
+footer .contact {
+	width: 100%;
+	text-align: center;
+}
+footer .social-icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.social {
+	text-align: center;
+}
+footer .social-icons p {
+	text-align: center;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	margin-top: 1.6em;
-	text-align: center;
 }
-.contact h4 {
-	margin-bottom: 0;
-	font-weight: 400;
-}
-.media-icons {
-	margin-top: 1em;
-	 display: flex;
-  justify-content: center;
-  align-items: center;
+footer .copyright {
+	margin-top: 2em;
+	margin-bottom: 0.3em;
 }
 .copyright {
 	padding: 0;
 	margin-top: 3em;
 	text-align: center;
 }
-.media-icons img {
+/* ==========================================================================
+   FAQ PAGE
+   ========================================================================== */
+.faq-area {
+	background-color: #527158;
+	padding: 1em 0;
+	margin: 0 auto;
 	display: flex;
-	padding: 0 2em;
+	align-items: center;
+	justify-content: center;
+}
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+.about {
+	background-color: #527158;
+	padding: 1em 0;
+	line-height: 2.5em;
+}
+.about p {
+	line-height: 1.3em;
+}
+.map {
+	width: 100%;
+}
+.about-contact {
+	background-color: #2a423a;
+	padding-top: .1em;
+	padding-bottom: 1em;
+	line-height: 2.5em
+}
+.about-contact h3 {
+	line-height: 0em;
+	padding-top: 1em
+}
+.about-contact p {
+	line-height: 1em;
+	font-size: .8em
 }
 /* ==========================================================================
    Helper classes
@@ -342,12 +397,137 @@ figcaption {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-	/* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.25em;
+	}
+	h4 {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 0.875em;
+	}
+	figcaption {}
+	header {
+		justify-content: flex-start;
+	}
+	.cointainer {
+		max-width: 640px;
+	}
+	.logo {
+		width: 30%;
+		border: none;
+		margin-bottom: .7em;
+		padding: 0;
+	}
+	.nav {
+		width: 70%
+	}
+	nav ul {
+		justify-content: flex-end
+	}
+	.news-area .cointainer {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		margin-bottom: -1.2em;
+	}
+	.news-txt {
+		width: 35%;
+	}
+	.news-txt-h4 {
+		width: 35%;
+	}
+	.amenities-area .cointainer {
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+	.features-icons {
+		flex-basis: 50%;
+	}
+	.review-area .cointainer {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	.review-title {
+		margin-bottom: -1em;
+	}
+	.review-img {
+		width: 52%;
+		height: 16em;
+		margin-top: 2.5em;
+	}
+	.review-txt {
+		width: 45%;
+	}
+	footer .cointainer {
+		width: 100%;
+	}
+	.footer-wrapping {
+		max-width: 640px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	footer .contact {
+		margin-bottom: 0;
+		width: 50%;
+	}
+	footer .social {
+		width: 50%;
+	}
+	/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+	.about p {
+		padding: 0 1em;
+	}
+	.about .cointainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.about-title {
+		padding-left: .9em;
+		line-height: 4em;
+	}
+	.about-contact .cointainer {
+		margin-top: 1em;
+	}
+	.address-whole {
+		max-width: 640px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row wrap;
+		margin-bottom: 1.5em;
+	}
+	.address-half p {
+		line-height: .5em;
+	}
+	/* ==========================================================================
+   FAQ PAGE
+   ========================================================================== */
+	.faq-area .cointainer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		padding-bottom: 1em;
+	}
+	.faq-qa {
+		flex-basis: 40%;
+	}
 }
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-	/* Style adjustments for high resolution devices */
-}
+@media only screen and (min-width: 1200px) {}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
