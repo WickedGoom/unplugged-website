@@ -194,7 +194,7 @@ nav a:focus, nav a:hover {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	padding-bottom: 1.8em;
+	padding-bottom: 3em;
 }
 .news-area h4 {
 	margin: 1.2em 0 0 0;
@@ -204,6 +204,26 @@ nav a:focus, nav a:hover {
 }
 .signup {
 	margin-top: 1em;
+}
+input[type=text] {
+	padding: 1em;
+	box-sizing: border-box;
+	width: 100%;
+	color: #2a423a;
+	font-style: italic;
+}
+input[type=button] {
+	width: 100%;
+	padding: 1em 0;
+	margin-top: 20px;
+	background-color: #2a423a;
+	font-family: 'Poppins', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 1.125em;
+	color: #e2e3ed;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
 }
 .amenities-area {
 	background-image: url("../img/rawpixel-800820-unsplash1.png");
