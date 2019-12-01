@@ -75,18 +75,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ==========================================================================
+   GRID
+   ========================================================================== */
 *, *:before, *:after {
 	box-sizing: border-box;
 }
 html {
-	max-width: 1200px;
 	background-color: #202322;
 }
 body {
-	margin: 0;
+	color: #fefefe;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
-	color: #fefefe;
+	margin: 0;
 }
 h1 {
 	font-size: 2.25em;
@@ -94,8 +96,8 @@ h1 {
 }
 h2 {
 	font-size: 1.875em;
-	line-height: 1em;
 	font-weight: 400;
+	line-height: 1em;
 }
 h4 {
 	font-size: 1.125em;
@@ -105,13 +107,13 @@ p {
 	font-size: 0.875em;
 }
 .cointainer {
+	margin: 0 auto;
 	max-width: 640px;
 	width: 95%;
-	margin: 0 auto;
 }
 img {
-	max-width: 100%;
 	height: auto;
+	max-width: 100%;
 }
 figure {
 	margin: 0;
@@ -121,79 +123,83 @@ figcaption {
 	text-align: center;
 	width: 60%;
 }
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
 header {
+	align-items: center;
 	background-color: #202322;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-flow: row wrap;
+	justify-content: center;
 	width: 100%;
 }
 .logo {
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 	width: 100%;
 }
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 .logo {
-	margin: 0.75em 0 0em 0;
 	border-bottom: 0.0625em solid #3a3a3a;
+	margin: 0.75em 0 0em 0;
 	padding-bottom: 0.75em;
 }
+/* ==========================================================================
+   NAV
+   ========================================================================== */
 .nav {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
 }
 nav {
 	width: 100%;
 }
 nav ul {
-	padding: 0;
 	display: flex;
 	justify-content: space-around;
+	padding: 0;
 }
 nav li {
-	font-family: 'open sans';
 	display: inline-block;
-	margin: 0 0em 0 0em;
+	font-family: 'open sans';
 	font-size: 1.125em;
-	text-transform: uppercase;
 	font-weight: bold;
+	margin: 0 0em 0 0em;
 	padding: 0 1em;
+	text-transform: uppercase;
 }
 nav a {
-	text-decoration: none;
 	color: #fefefe;
+	text-decoration: none;
 }
 nav a:focus, nav a:hover {
 	color: #DDD;
 }
+/* ==========================================================================
+   HERO
+   ========================================================================== */
 .hero-area {
-	background-image: url("../img/jake-melara-30679-unsplash.png");
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding-bottom: 15em;
-	background-size: cover;
+	background-image: url("../img/jake-melara-30679-unsplash.png");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
+	padding-bottom: 15em;
 }
 .news-area {
+	align-items: center;
 	background-color: #527158;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-flow: row wrap;
+	justify-content: center;
 	padding-bottom: 3em;
 }
 .news-area h4 {
@@ -206,142 +212,165 @@ nav a:focus, nav a:hover {
 	margin-top: 1em;
 }
 input[type=text] {
-	padding: 1em;
 	box-sizing: border-box;
-	width: 100%;
 	color: #2a423a;
 	font-style: italic;
+	padding: 1em;
+	width: 100%;
 }
 input[type=button] {
-	width: 100%;
-	padding: 1em 0;
-	margin-top: 20px;
 	background-color: #2a423a;
-	font-family: 'Poppins', Helvetica, Arial, sans-serif;
-	font-weight: 500;
-	font-size: 1.125em;
-	color: #e2e3ed;
 	border: none;
+	color: #e2e3ed;
+	font-family: 'Poppins', Helvetica, Arial, sans-serif;
+	font-size: 1.125em;
+	font-weight: 500;
+	margin-top: 20px;
+	padding: 1em 0;
 	text-align: center;
 	text-transform: uppercase;
+	width: 100%;
 }
+/* ==========================================================================
+   AMENITIES/FIGURES
+   ========================================================================== */
 .amenities-area {
+	align-items: center;
 	background-image: url("../img/rawpixel-800820-unsplash1.png");
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 .amenities-area h2 {
 	line-height: 1.2em;
-	text-align: center;
 	margin: 1em auto;
+	text-align: center;
 }
 .features-icons {
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	display: flex;
 	flex-flow: column wrap;
+	justify-content: center;
 	padding-bottom: 2em;
 }
 .review-area .cointainer {
 	display: flex;
-	justify-content: center;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 .review-area {
-	padding-top: 1em;
-	padding-bottom: 1.6em;
 	background-color: #2a423a;
+	padding-bottom: 1.6em;
+	padding-top: 1em;
 }
 .review-area p {
 	max-width: 600px;
 }
 .review-img {
-	width: 100%;
-	max-width: 600px;
-	padding: 7.5em;
 	background-image: url("../img/omar-lopez-296944-unsplash.png");
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 600px;
+	padding: 7.5em;
+	width: 100%;
 }
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 footer {
+	align-items: center;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 }
 footer p {
 	margin: 0;
 }
 footer .contact {
-	width: 100%;
 	text-align: center;
+	width: 100%;
 }
 footer .social-icons {
+	align-items: center;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
 }
 .social {
 	text-align: center;
 }
 footer .social-icons p {
-	text-align: center;
-	width: 100%;
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+.fab {
+	color: white;
+	font-size: 2em;
 }
 footer .copyright {
-	margin-top: 2em;
 	margin-bottom: 0.3em;
+	margin-top: 2em;
 }
 .copyright {
-	padding: 0;
 	margin-top: 3em;
+	padding: 0;
 	text-align: center;
 }
 /* ==========================================================================
    FAQ PAGE
    ========================================================================== */
 .faq-area {
-	background-color: #527158;
-	padding: 1em 0;
-	margin: 0 auto;
-	display: flex;
 	align-items: center;
+	background-color: #527158;
+	display: flex;
 	justify-content: center;
+	margin: 0 auto;
+	padding: 1em 0;
 }
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
 .about {
 	background-color: #527158;
-	padding: 1em 0;
 	line-height: 2.5em;
+	padding: 1em 0;
 }
 .about p {
 	line-height: 1.3em;
 }
-.map {
+.map figure {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 80%;
+	position: relative;
+	width: 100%;
+}
+.map iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 .about-contact {
 	background-color: #2a423a;
-	padding-top: .1em;
+	line-height: 2.5em;
 	padding-bottom: 1em;
-	line-height: 2.5em
+	padding-top: .1em;
 }
 .about-contact h3 {
 	line-height: 0em;
-	padding-top: 1em
+	padding-top: 1em;
 }
 .about-contact p {
+	font-size: .8em;
 	line-height: 1em;
-	font-size: .8em
 }
 /* ==========================================================================
    Helper classes
@@ -418,6 +447,9 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 768px) {
+	/* ==========================================================================
+   GRID
+   ========================================================================== */
 	h1 {
 		font-size: 3em;
 	}
@@ -428,74 +460,89 @@ footer .copyright {
 		font-size: 1.5em;
 	}
 	p {
-		font-size: 0.875em;
+		font-size: 1em;
 	}
-	figcaption {}
 	header {
 		justify-content: flex-start;
 	}
 	.cointainer {
 		max-width: 640px;
 	}
+	/* ==========================================================================
+   HEADER AND NAV
+   ========================================================================== */
 	.logo {
-		width: 30%;
 		border: none;
 		margin-bottom: .7em;
 		padding: 0;
+		width: 30%;
 	}
 	.nav {
-		width: 70%
+		width: 70%;
 	}
 	nav ul {
-		justify-content: flex-end
+		justify-content: flex-end;
 	}
+	/* ==========================================================================
+   HERO
+   ========================================================================== */
 	.news-area .cointainer {
-		width: 100%;
 		display: flex;
-		justify-content: space-around;
 		flex-flow: row wrap;
+		justify-content: space-around;
 		margin-bottom: -1.2em;
+		width: 100%;
 	}
 	.news-txt {
-		width: 35%;
+		width: 40%;
 	}
 	.news-txt-h4 {
-		width: 35%;
+		width: 40%;
 	}
+	/* ==========================================================================
+   AMENITIES
+   ========================================================================== */
 	.amenities-area .cointainer {
-		display: flex;
-		justify-content: space-around;
-		flex-flow: row wrap;
 		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
 	}
 	.features-icons {
 		flex-basis: 50%;
 	}
+	/* ==========================================================================
+   REVIEW
+   ========================================================================== */
 	.review-area .cointainer {
 		display: flex;
-		justify-content: space-between;
 		flex-flow: row wrap;
+		justify-content: space-between;
 		width: 100%;
 	}
 	.review-title {
 		margin-bottom: -1em;
 	}
 	.review-img {
-		width: 52%;
 		height: 16em;
-		margin-top: 2.5em;
+		margin-top: 2.3em;
+		width: 52%;
 	}
 	.review-txt {
+		font-size: .9em;
 		width: 45%;
 	}
+	/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 	footer .cointainer {
 		width: 100%;
 	}
 	.footer-wrapping {
-		max-width: 640px;
+		align-items: flex-start;
 		display: flex;
 		justify-content: center;
-		align-items: flex-start;
+		max-width: 640px;
 	}
 	footer .contact {
 		margin-bottom: 0;
@@ -504,6 +551,9 @@ footer .copyright {
 	footer .social {
 		width: 50%;
 	}
+	.fab {
+		padding-top: 0.2em;
+	}
 	/* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
@@ -511,24 +561,30 @@ footer .copyright {
 		padding: 0 1em;
 	}
 	.about .cointainer {
+		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 	.about-title {
+		line-height: 3em;
 		padding-left: .9em;
-		line-height: 4em;
+	}
+	.map figure {
+		padding-bottom: 45%;
 	}
 	.about-contact .cointainer {
 		margin-top: 1em;
 	}
 	.address-whole {
-		max-width: 640px;
-		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		display: flex;
 		flex-flow: row wrap;
+		justify-content: space-between;
 		margin-bottom: 1.5em;
+		max-width: 640px;
+	}
+	.address1 {
+		padding-top: .9em;
 	}
 	.address-half p {
 		line-height: .5em;
@@ -537,17 +593,109 @@ footer .copyright {
    FAQ PAGE
    ========================================================================== */
 	.faq-area .cointainer {
-		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		display: flex;
 		flex-flow: row wrap;
+		justify-content: space-between;
 		padding-bottom: 1em;
 	}
 	.faq-qa {
 		flex-basis: 40%;
 	}
 }
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+	/* ==========================================================================
+   GRID
+   ========================================================================== */
+	h1 {
+		font-size: 3.5em;
+	}
+	h2 {
+		font-size: 2.25em;
+	}
+	h4 {
+		font-size: 2em;
+	}
+	p {
+		font-size: 1.25em;
+	}
+	figcaption {
+		font-size: .8em;
+	}
+	.cointainer {
+		max-width: 960px;
+	}
+	/* ==========================================================================
+   HERO, NAV AND REVIEW
+   ========================================================================== */
+	.hero-area h1 {
+		width: 50%;
+	}
+	nav {
+		padding-right: 4em;
+	}
+	.features-icons {
+		flex-basis: 30%;
+	}
+	.wifi-icon {
+		padding-bottom: 4em;
+	}
+	.review-img {
+		margin-top: 3.1em;
+		max-width: 960px;
+	}
+	.review-txt h4 {
+		margin-bottom: 0;
+	}
+	.footer-wrapping {
+		max-width: 960px;
+	}
+	/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+	.about h1 {
+		line-height: 1.2em;
+	}
+	.about-contact .cointainer {
+		max-width: 960px;
+	}
+	.about-contact {
+		display: flex;
+		justify-content: center;
+		line-height: 4em;
+	}
+	.about-contact h1 {
+		padding-left: 0.2em;
+		padding-right: 0.3em;
+	}
+	.map figure {
+		padding-bottom: 30%;
+	}
+	.address-whole {
+		max-width: 960px;
+		width: 100%;
+	}
+	.address-half {
+		width: 40%;
+	}
+	.address1 {
+		padding-left: 1em;
+	}
+	.address2 {
+		padding-right: 1em;
+	}
+	/* ==========================================================================
+   FAQ PAGE
+   ========================================================================== */
+	.faq-title {
+		font-size: 1.5em;
+		max-width: 960px;
+		width: 100%;
+	}
+	.faq-qa {
+		flex-basis: 45%;
+	}
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
