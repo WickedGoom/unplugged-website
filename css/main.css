@@ -88,7 +88,7 @@ body {
 	color: #fefefe;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
-	margin: 0;
+	margin: 0 auto;
 }
 h1 {
 	font-size: 2.25em;
@@ -136,15 +136,13 @@ header {
 }
 .logo {
 	align-items: center;
+	border-bottom: 0.0625em solid #3a3a3a;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	width: 100%;
-}
-.logo {
-	border-bottom: 0.0625em solid #3a3a3a;
 	margin: 0.75em 0 0em 0;
 	padding-bottom: 0.75em;
+	width: 100%;
 }
 /* ==========================================================================
    NAV
@@ -294,6 +292,10 @@ footer .contact {
 	text-align: center;
 	width: 100%;
 }
+#contact {
+	font-size: 1.125em;
+	font-weight: 400;
+}
 footer .social-icons {
 	align-items: center;
 	display: flex;
@@ -303,9 +305,6 @@ footer .social-icons {
 	text-align: center;
 }
 footer .social-icons p {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	text-align: center;
 	width: 100%;
 }
@@ -694,6 +693,17 @@ footer .copyright {
 	}
 	.faq-qa {
 		flex-basis: 45%;
+	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.cointainer {
+		margin: 0;
+	}
+	.review-area .cointainer {
+		margin: 0 25%;
+	}
+	.about .cointainer {
+		margin: 0 23%;
 	}
 }
 /* ==========================================================================
